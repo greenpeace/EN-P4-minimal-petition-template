@@ -1,0 +1,64 @@
+    </div>
+
+    <footer class="site-footer">
+    	<div class="container">
+    		<ul class="footer-social-media list-unstyled col-md-8 col-lg-5">
+				<li><a href="http://twitter.com"><i class="fa fa-twitter "></i></a></li>
+				<li><a href="http://facebook.com"><i class="fa fa-facebook-official "></i></a></li>
+				<li><a href="http://youtube.com"><i class="fa fa-youtube-play "></i></a></li>
+				<li><a href="http://instagram.com"><i class="fa fa-instagram "></i></a></li>
+			</ul>
+    
+    		<ul class="list-unstyled footer-links">
+				<li><a href="https://www.greenpeace.org/new-zealand/news/">NEWS</a></li>
+				<li><a href="https://www.greenpeace.org/new-zealand/about/">About</a></li>
+				<li><a href="https://chj.tbe.taleo.net/chj05/ats/careers/v2/searchResults?org=GREENPEACEANZ&amp;cws=37">JOBS</a></li>
+				<li><a href="https://www.greenpeace.org/new-zealand/press/">PRESS CENTRE</a></li>
+				<li><a href="https://www.greenpeace.org/new-zealand/about/contact/">CONTACT</a></li>
+				<li><a href="https://secure.greenpeace.org.nz/donate/?nl=1&amp;seg=2&amp;dt=s&amp;das=1&amp;das1=80&amp;das2=100&amp;das3=200&amp;dam=1&amp;dam1=10&amp;dam2=20&amp;dam3=30&amp;damo=50&amp;ups=0&amp;acd=P4footerpmenu">DONATE</a></li>
+			</ul>
+
+		    <ul class="list-unstyled footer-links-secondary">
+				<li><a href="https://www.greenpeace.org/new-zealand/privacy/">Privacy policy</a></li>
+				<li><a href="https://www.greenpeace.org/new-zealand/copyright/">Copyright</a></li>
+				<li><a href="https://www.greenpeace.org/new-zealand/site-map/">Site map</a></li>
+				<li><a href="https://www.greenpeace.org/archive-new-zealand/en/System-templates/Search-results/?adv=true&amp;all=">Search the archive</a></li>
+			</ul>
+    
+    		<p class="copyright-text col-md-8">Unless otherwise stated, the copy of the website is licensed under a CY-BY International license.</p>
+    		<p class="gp-year"><i class="fa fa-creative-commons"></i> Greenpeace <span id="current-year"></span></p>
+    	</div>
+    </footer>
+    
+<script>
+    // ©© add current year
+    var d = new Date();
+    var year = d.getFullYear();
+    $('#current-year').text(year);
+</script>
+
+<script>
+$('.navbar-search-toggle').click(function(){
+    var searchState = $(this).attr('aria-expanded');
+    if(searchState=="false"){
+        $(this).attr('aria-expanded','true');
+        $(this).parent().find('#search_form').addClass('open');
+    } else {
+        $(this).attr('aria-expanded','false');
+        $(this).parent().find('#search_form').removeClass('open');
+    }
+});
+
+$( '.navbar-dropdown-toggle' ).click(function() {
+    $('#navbar-dropdown').css({
+      'display' : 'block'
+    });
+});
+
+$('.close-navbar-dropdown').click(function() {
+    $('#navbar-dropdown').css({
+      'display' : 'none'
+    });
+});
+
+</script>
